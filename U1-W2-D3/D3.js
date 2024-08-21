@@ -152,16 +152,17 @@ const eyeColor = {
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
+switch(eyeColor){
+
+}
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 const crewMass = 0;
-
-const mass1 = starWarsCharacters.mass;
-while (crewMass < 0) {
-  crewMass += mass1;
-}
+let i= 0;
+while (i < starWarsCharacters.lenght) {
+ 
 console.log("la massa totale dell'equipaggio è ${crewMass}");
 
 /* ESERCIZIO 7
@@ -183,10 +184,10 @@ console.log("la massa totale dell'equipaggio è ${crewMass}");
 for (let i = 0; i < starWarsCharacters.length; i++) {
   const starObj = starWarsCharacters[i];
   if (starObj.gender === "n/a") {
-    gender === "robot";
+    starObj.gender === "robot";
   }
 }
-console.log("gender", gender);
+console.log("gender", starObj.gender);
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
