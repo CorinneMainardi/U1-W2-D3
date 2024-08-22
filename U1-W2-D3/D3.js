@@ -242,5 +242,5 @@ console.log(charactersNames);
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
-let random1 = Math.floor(Math.random() * (starWarsCharacters.length + 1));
-console.log("la battaglia è stata persa per colpa di " + starWarsCharacters[random1].name);
+let random1 = Math.floor(Math.random() * starWarsCharacters.length);
+console.log("la battaglia è stata persa per colpa di " + starWarsCharacters[random1]);
